@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
     const products = [
-        { label: 'Nike SB Dunk', price: 10000.00, qtyElement: document.getElementById('qty1') },
-        { label: 'Air Jordan', price: 12000.00, qtyElement: document.getElementById('qty2') },
-        { label: 'Air Jordan Tatum', price: 11500.00, qtyElement: document.getElementById('qty3') },
-        { label: 'Adidas Samba OG', price: 9000.00, qtyElement: document.getElementById('qty4') },
-        { label: 'Vans Old Skool', price: 4500.00, qtyElement: document.getElementById('qty5') },
-        { label: 'Air Jordan 1 Elevate Low', price: 13000.00, qtyElement: document.getElementById('qty6') },
+        { label: 'Christian Dior', price: 35000.00, qtyElement: document.getElementById('qty1') },
+        { label: 'Prada', price: 10000.00, qtyElement: document.getElementById('qty2') },
+        { label: 'Channel', price: 62000.00, qtyElement: document.getElementById('qty3') },
+        { label: 'Louis Vuitton', price: 30000.00, qtyElement: document.getElementById('qty4') },
+        { label: 'Gucci', price: 20000.00, qtyElement: document.getElementById('qty5') },
+        { label: 'Lacoste', price: 30000.00, qtyElement: document.getElementById('qty6') },
     ];
 
     const carts = document.getElementById("carts");
