@@ -14,19 +14,19 @@ document.addEventListener('DOMContentLoaded', () => {
     const change = document.getElementById("change");
 
     function addOrder() {
-        carts.textContent = "";
+       carts.value = "";
         let totalPrice = 0;
 
         products.forEach(product => {
             const qty = parseFloat(product.qtyElement.value);
             if (qty > 0) {
-                const order = ${qty} pc/s x ${product.price}------${product.label}------ Php${(qty * product.price).toFixed(2)}\n;
+                const order = `${qty} pc/s x ${product.price} ------ ${product.label} ------ Php ${(qty * product.price).toFixed(2)}\n`;
                 carts.textContent += order;
                 totalPrice += qty * product.price;
             }
         });
 
-        total.value = '₱ ' + totalPrice.toFixed(2);
+       total.value = totalPrice.toFixed(2); 
     }
 
     function calculateChange() {
