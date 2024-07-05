@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Homepage</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color:  #FFFAFA
+        }
+        .container {
+            margin-top: 20px;
+        }
+        .header {
+            text-align: center;
+            background-color: #FFC8A2; /*  background */
+            color: white;
+            padding: 20px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        .header h2 {
+            margin: 0;
+            font-size: 2.5em;
+            background-color: #A9A9A9; /*  background for text */
+            display: inline-block;
+            padding: 0 20px;
+            animation: slideOut 5s linear infinite;
+        
+            }
+        @keyframes slideOut {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+        .product {
+            background-color: #FFFFFF;
+            border: 1px solid #F5F5F5;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 20px;
+            text-align: center; /* Center text */
+            position: relative; /* Ensure position for absolute text */
+        }
+        .product:hover {
+            transform: scale(1.05);
+            background-color: #FFFAFA;
+        }
+        .product img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px; /* Spacing below image */
+        }
+        .product label {
+            font-weight: bold;
+            font-size: 1.2em;
+            display: block; /* Ensure label is block-level */
+        }
+        .product input {
+            width: 80%; /* Adjust width as needed */
+            margin: 0 auto; /* Center align input */
+        }
+        .orders {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+        <p>BSIT 3-A</p>
+        <p>Soriano, Mary Rose M.</p>
+            <h2>Luxury Bags Store</h2>
+            <hr class="hr">
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="text-center product">
+                    <label for="product1">Horsebit Gold Sandals</label>   
+                    <img src="1.jpg" class="img-thumbnail">
+                    <label for="price1">62000.00</label>
+                    <input type="number" class="form-control" id="qty1" placeholder="Enter quantity">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="text-center product">
+                    <label for="product2">Horsebit White Sandals</label>   
+                    <img src="3.jpg" class="img-thumbnail">
+                    <label for="price2">62000.00</label>
+                    <input type="number" class="form-control" id="qty2" placeholder="Enter quantity">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="text-center product">
+                    <label for="product3">Horsebit Red Sandals</label>   
+                    <img src="4.jpg" class="img-thumbnail">
+                    <label for="price3">62000.00</label>
+                    <input type="number" class="form-control" id="qty3" placeholder="Enter quantity">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="text-center product">
+                    <label for="product4">Horsebit Orange Sandals</label>   
+                    <img src="5.jpg" class="img-thumbnail">
+                    <label for="price4">62000.00</label>
+                    <input type="number" class="form-control" id="qty4" placeholder="Enter quantity">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="text-center product">
+                    <label for="product5">Cutout Leather Sandals</label>   
+                    <img src="6.jpg" class="img-thumbnail">
+                    <label for="price5">20000.00</label>
+                    <input type="number" class="form-control" id="qty5" placeholder="Enter quantity">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="text-center product">
+                    <label for="product6">Horsebit Pink Sandals</label>   
+                    <img src="8.jpg" class="img-thumbnail">
+                    <label for="price6">62000.00</label>
+                    <input type="number" class="form-control" id="qty6" placeholder="Enter quantity">
+                </div>
+            </div>
+        </div>
+        <div class="row orders">
+            <div class="col-md-12">
+                <label for="carts">Orders</label><br>
+                <textarea class="form-control" rows="10" id="carts" cols="200" readonly style="width:100%;font-size:12px;"></textarea>
+                <input type="text" class="form-control border-0" id="total" readonly placeholder="Total">
+                <input type="number" class="form-control" id="cash" placeholder="Cash Tendered">
+                <input type="text" class="form-control border-0" id="change" readonly placeholder="Change">
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+  </html>
